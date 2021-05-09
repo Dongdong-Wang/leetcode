@@ -1,11 +1,16 @@
 #include <stdlib.h>
 #include <stdio.h>
 
+#ifndef STRUCT_TREE_NODE
+#define STRUCT_TREE_NODE
+
 struct tree_node {
     int val;
     struct tree_node *left;
     struct tree_node *right;
 };
+
+#endif /*STRUCT_TREE_NODE*/
 
 static inline struct tree_node *array2bst(int *array, int len) {
     int mid;

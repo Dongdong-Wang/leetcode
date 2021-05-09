@@ -1,7 +1,12 @@
+#ifndef STRUCT_LIST
+#define STRUCT_LIST
+
 struct list {
     int val;
     struct list *n;
 };
+
+#endif /*STRUCT_LIST*/
 
 #ifdef RECURSION
 
